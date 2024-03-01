@@ -1,0 +1,9 @@
+FROM python:3.9
+
+WORKDIR /app
+
+COPY ./listen_script.py /app/listen_script.py
+
+RUN pip install requests
+
+CMD ["python", "listen_script.py"]
