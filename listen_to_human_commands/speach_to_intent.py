@@ -14,6 +14,8 @@ recorder = PvRecorder(
     frame_length=rhino.frame_length,)
 recorder.start()
 
+
+
 while True:
     audio_frame = recorder.read()
     is_finalized = rhino.process(audio_frame)
