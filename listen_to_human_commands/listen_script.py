@@ -3,7 +3,7 @@ import time
 from pvrecorder import PvRecorder
 from wakeup_word_test import detect_wake_up_word
 
-SERVER_URL = "http://localhost:8888/"
+SERVER_URL = "http://192.168.1.58:8888/"
 
 is_awake = False
 

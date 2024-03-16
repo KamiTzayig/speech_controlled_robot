@@ -1,9 +1,10 @@
 import pvporcupine
 from pvrecorder import PvRecorder
 from api_keys import ACCESS_KEY
-KEYWORD_FILE_PATH_1 = r"始めて_ja_windows_v3_0_0.ppn"
-KEYWORD_FILE_PATH_2 = r"止まれ_ja_windows_v3_0_0.ppn"
-MODEL_FILE_PATH = r"porcupine_params_ja.pv"
+BASE_PATH  =r"C:\Users\dyeko\Documents\GitHub\speech_controlled_robot\listen_to_human_commands"
+KEYWORD_FILE_PATH_1 = BASE_PATH + r"/始めて_ja_windows_v3_0_0.ppn"
+KEYWORD_FILE_PATH_2 = BASE_PATH + r"/止まれ_ja_windows_v3_0_0.ppn"
+MODEL_FILE_PATH = BASE_PATH + r"/porcupine_params_ja.pv"
 
 porcupine = pvporcupine.create(
 access_key= ACCESS_KEY,
